@@ -1,0 +1,16 @@
+.text-justify {
+  text-align: justify;
+}
+
+#productsGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 3rem;
+  justify-content: center;
+}
+
+#cartIcon:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
