@@ -36,6 +36,7 @@
     </nav>
     <div class="container-fluid bg-dark text-white">
             <div class="container p-3" id="cartTable">
+                <h1>CART</h1>
                 <?php
                     require_once("../functions/printCart.php");
                     showCart();
