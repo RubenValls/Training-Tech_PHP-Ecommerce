@@ -40,6 +40,13 @@
                 <?php
                     require_once("../functions/printCart.php");
                     showCart();
+                    require_once("../functions/cartActions.php");
+                    if(isset($_POST['pay'])){
+                        payCart();
+                    }
+                    if(isset($_POST['delete'])){
+                        deleteCart();
+                    }
                 ?>
             </div>
     </div>
