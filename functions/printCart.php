@@ -18,30 +18,29 @@
             }
         }
 
-        /*
         if ($result->num_rows > 0) {
             // output data of each row
+            print '<table class="table">';
+            print '<thead>
+                        <tr>
+                            <th scope="col">ID Product</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Order</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>';
+            print '<tbody>';
             while($row = $result->fetch_assoc()) {
-                print '<div class="card p-2 mx-auto text-center" style="width: 18rem;">';
-                print '<form method="post" action="../functions/addCart.php">';
-                print '<img src="'.$row["IMG"].'" class="card-img-top" alt="'.$row["NAME"].'">';
-                print '<div class="card-body">';
-                print '<h5 class="card-title">'.$row["NAME"].'</h5>';
-                print '<p class="card-text">'.$row["DESCRIPTION"].'</p>';
-                print '<hr>';
-                print '<h6>'.$row["PRICE"].'$</h6>';
-                print '<hr>';
-                print '<input type="number" class="form-control" min="1" name="quantity" required/>';
-                print '<input type="hidden" class="form-control" name="name" value="'.$row["NAME"].'"/>';
-                print '<input type="hidden" class="form-control" name="price" value="'.$row["PRICE"].'"/>';
-                print '<input type="hidden" class="form-control" name="user" value="'.$_SESSION['email'].'"/>';
-                print '<button type="sumbit" href="#" class="btn btn-outline-primary mx-auto mt-2">Add to cart</button>';
-                print '</div>';
-                print '</form>';
-                print '</div>';
+                print '<tr>';
+                print '<th scope="row">'. $row["ID"] .'</th>';
+                print '<td>'. $row["NAME"] .'</td>';
+                print '<td>'. $row["nameProduct"] .'</td>';
+                print '<td>'. $row["quantity"] .'</td>';
+                print '<td>'. $row["total_price"] .' $</td>';
+                print '</tr>';
             }
         }
-        */
 
         $db->close();
     }
