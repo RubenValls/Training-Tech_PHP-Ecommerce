@@ -19,12 +19,6 @@ function deleteCart(){
             die("Connection failed: " . $db->connect_error);
         }
 
-        /*
-        $user = $_SESSION['email'];
-        $sql = "SELECT * FROM cart_products WHERE email = '$user'";
-        $resultCart = $db->query($sql);
-        */
-
         $sql = "SELECT NAME,QUANTITY FROM products";
         $resultStock = $db->query($sql);
         $arrayStock = array();
@@ -35,11 +29,27 @@ function deleteCart(){
             }
         }
 
-        $db->close();
-
-        foreach($arrayStock as $product){
-            print '<h1>'.$product['NAME'].'</h1>';
-            print '<h1>'.$product['QUANTITY'].'</h1>';
+        $user = $_SESSION['email'];
+        $sql = "SELECT * FROM cart_products WHERE email = '$user'";
+        $resultCart = $db->query($sql);
+        if ($resultCart->num_rows > 0) {
+            while($row = $resultCart->fetch_assoc()) {
+                $name = $row['nameProduct'];
+                $quantity = $row['quantity'];
+                foreach($arrayStock as $product){
+                    if($name == $product['NAME'] && $quantity < $product['QUANTITY']){
+                        $newQuantity = $product['QUANTITY'] - $quantity;
+                        $sql = "UPDATE products SET QUANTITY = '$newQuantity' WHERE NAME = '$name'";
+                        $db->query($sql);
+                        print '<h1 class="text-center">Product: '.$product['NAME'].' and quantity: '. $quantity .' payed. Thank you!</h1>';
+                        $sql = "DELETE FROM cart_products WHERE nameProduct = '$name' AND quantity = '$quantity'";
+                        $db->query($sql);
+                    }
+                }
+            }
         }
+        $db->close();
+        print '<h4 class="text-center">You will be redirected in 5 seconds.</h4>';
+        header( "refresh:5;url=../pages/cart.php" );
     }
 ?>
