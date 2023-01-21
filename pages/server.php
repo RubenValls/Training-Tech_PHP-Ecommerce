@@ -77,6 +77,8 @@
             $password = md5($pass);
             $query = "SELECT * FROM users WHERE EMAIL='$email' AND PASS='$password'";
             $results = mysqli_query($db, $query);
+            $query = "SELECT * FROM admins WHERE NAME='$email' AND PASS='$password'";
+            $resultsAdmin = mysqli_query($db, $query);
             if (mysqli_num_rows($results) == 1) {
                 $_SESSION['email'] = $email;
                 $_SESSION['success'] = "You are now logged in";

@@ -16,10 +16,8 @@
             Training-Tech
             </a>
             <div class="text-center">
-                <?php
-                    echo "<h6>ADMIN</h6>";
-                ?>
-                <a href="../index.html" class="link-dark"><button class="btn btn-sm btn-outline-secondary">LOG OUT</button></a>
+                <h6>Admin Panel</h6>
+                <a href="../index.php" class="link-dark"><button class="btn btn-sm btn-outline-secondary">LOG OUT</button></a>
             </div>
         </div>
     </nav>
