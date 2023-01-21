@@ -16,5 +16,6 @@
     $result = $db->query($sql);
 
     $db->close();
+    
     header('Location: ../pages/user.php');
     ?>
