@@ -30,7 +30,7 @@
                 <?php
                     echo "<h6>". $_SESSION['email']."</h6>";
                 ?>
-                <a href="../index.php" class="link-dark"><button class="btn btn-sm btn-outline-secondary">LOG OUT</button></a>
+                <a href="../index.html" class="link-dark"><button class="btn btn-sm btn-outline-secondary">LOG OUT</button></a>
             </div>
         </div>
     </nav>

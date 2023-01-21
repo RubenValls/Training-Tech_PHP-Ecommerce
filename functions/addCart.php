@@ -16,6 +16,9 @@
     $result = $db->query($sql);
 
     $db->close();
-    
-    header('Location: ../pages/user.php');
+
+    echo '<script>
+            alert("'.$name.' added to cart. Thanks!");
+            window.location.href="../pages/user.php";
+            </script>';
     ?>
