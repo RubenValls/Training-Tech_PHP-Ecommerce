@@ -31,7 +31,7 @@
             <div class="container p-3" id="cartTable">
                 <div class="row m-2 h-25">
                     <div class="col-6">
-                        <a href="#" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Add Product</h3></button></a>
+                        <a href="addProductForm.html" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Add Product</h3></button></a>
                     </div>
                     <div class="col-6">
                         <a href="deleteProductForm.php" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Delete Product</h3></button></a>
