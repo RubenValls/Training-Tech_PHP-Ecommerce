@@ -24,8 +24,8 @@
             Training-Tech
             </a>
             <div>
-                <a href="pages/login.html" class="link-dark"><button class="btn btn-outline-secondary">LOG IN</button></a>
-                <a href="pages/signup.html" class="link-dark"><button class="btn btn-outline-secondary">SIGN UP</button></a>
+                <a href="pages/front/login.html" class="link-dark"><button class="btn btn-outline-secondary">LOG IN</button></a>
+                <a href="pages/front/signup.html" class="link-dark"><button class="btn btn-outline-secondary">SIGN UP</button></a>
             </div>
         </div>
     </nav>
@@ -84,7 +84,7 @@
     <footer id="sticky-footer" class="flex-shrink-0 py-4">
     <div class="container text-center">
         <small>Copyright &copy; Training-Tech - </small>
-        <a href="pages/adminForm.html" class="link-dark"><button class="btn btn-sm btn-outline-secondary">Admin Panel</button></a>
+        <a href="pages/front/adminForm.html" class="link-dark"><button class="btn btn-sm btn-outline-secondary">Admin Panel</button></a>
     </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->

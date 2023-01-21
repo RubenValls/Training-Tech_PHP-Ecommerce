@@ -12,18 +12,18 @@
     <title>TrainingTech - User</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="../styles/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="../../styles/styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <nav class="navbar bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="user.php">
-            <img src="../assets/img/LOGO.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <img src="../../assets/img/LOGO.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
             Training-Tech
             </a>
             <div class="text-center">
                 <h6>Admin Panel</h6>
-                <a href="../index.php" class="link-dark"><button class="btn btn-sm btn-outline-secondary">LOG OUT</button></a>
+                <a href="../../index.php" class="link-dark"><button class="btn btn-sm btn-outline-secondary">LOG OUT</button></a>
             </div>
         </div>
     </nav>
@@ -31,15 +31,15 @@
             <div class="container p-3" id="cartTable">
                 <div class="row m-2 h-25">
                     <div class="col-6">
-                        <a href="pages/adminForm.html" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Add Product</h3></button></a>
+                        <a href="#" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Add Product</h3></button></a>
                     </div>
                     <div class="col-6">
-                        <a href="pages/adminForm.html" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Delete Product</h3></button></a>
+                        <a href="#" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Delete Product</h3></button></a>
                     </div>
                 </div>
                 <div class="row m-2 h-25">
                     <div class="col">
-                    <a href="pages/adminForm.html" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Add Admin</h3></button></a>
+                    <a href="#" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Add Admin</h3></button></a>
                     </div>
                 </div>
             </div>

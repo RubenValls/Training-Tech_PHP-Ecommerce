@@ -30,7 +30,7 @@
                 $db->close();
                 echo '<script>
                 alert("Wrong username/password combination.");
-                window.location.href="../index.php";
+                window.location.href="../../index.php";
                 </script>';
             }
         }

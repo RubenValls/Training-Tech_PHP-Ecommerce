@@ -43,7 +43,7 @@
                 array_push($errors, "email already exists");
                 echo '<script>
                 alert("Email already exists. Use another one.");
-                window.location.href="signup.html";
+                window.location.href="../front/signup.html";
                 </script>';
             }
         }
@@ -56,7 +56,7 @@
             mysqli_query($db, $query);
             $_SESSION['email'] = $email;
             $_SESSION['success'] = "You are now logged in";
-            header('location: user.php');
+            header('location: ../front/user.php');
         }
         unset($errors);
     }
@@ -82,14 +82,14 @@
             if (mysqli_num_rows($results) == 1) {
                 $_SESSION['email'] = $email;
                 $_SESSION['success'] = "You are now logged in";
-                header('location: user.php');
+                header('location: ../front/user.php');
                 $db->close();
             }else {
                 array_push($errors, "Wrong username/password combination");
                 $db->close();
                 echo '<script>
                 alert("Wrong username/password combination.");
-                window.location.href="login.html";
+                window.location.href="../front/login.html";
                 </script>';
             }
         }
