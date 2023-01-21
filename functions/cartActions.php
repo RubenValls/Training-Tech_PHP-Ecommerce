@@ -23,7 +23,7 @@ function deleteCart(){
         $resultStock = $db->query($sql);
         $arrayStock = array();
         $totalPay = 0;
-        $date= date("d/m/Y");
+        $date= date('Y-m-d H:i:s');
 
         if ($resultStock->num_rows > 0) {
             while($row = $resultStock->fetch_assoc()){
@@ -38,9 +38,9 @@ function deleteCart(){
             while($row = $resultCart->fetch_assoc()) {
                 $name = $row['nameProduct'];
                 $quantity = $row['quantity'];
-                $price = $row['PRICE'];
                 foreach($arrayStock as $product){
                     if($name == $product['NAME'] && $quantity < $product['QUANTITY']){
+                        $price = $product['PRICE'];
                         $newQuantity = $product['QUANTITY'] - $quantity;
                         $sql = "UPDATE products SET QUANTITY = '$newQuantity' WHERE NAME = '$name'";
                         $totalPay += $quantity * $price;

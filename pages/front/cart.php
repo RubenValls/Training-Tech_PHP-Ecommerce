@@ -52,9 +52,12 @@
     </div>
     <div class="container-fluid bg-dark text-white p-1 text-center">
         <h1>Purchase history:</h1>
-        <?php
-            
-        ?>
+        <div class="container">
+            <?php
+                require_once("../../functions/printHistory.php");
+                showHistory();
+            ?>
+        </div>
     </div>
     <footer id="sticky-footer" class="flex-shrink-0 py-4">
     <div class="container text-center">
