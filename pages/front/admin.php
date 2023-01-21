@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="user.php">
+            <a class="navbar-brand" href="#">
             <img src="../../assets/img/LOGO.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
             Training-Tech
             </a>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="row m-2 h-25">
                     <div class="col">
-                    <a href="#" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Add Admin</h3></button></a>
+                    <a href="addAdminForm.html" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Add Admin</h3></button></a>
                     </div>
                 </div>
             </div>

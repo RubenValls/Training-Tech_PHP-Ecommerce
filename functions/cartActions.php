@@ -50,6 +50,6 @@ function deleteCart(){
         }
         $db->close();
         print '<h4 class="text-center">You will be redirected in 5 seconds.</h4>';
-        header( "refresh:5;url=../pages/cart.php" );
+        header( "refresh:5;url=../../pages/front/cart.php" );
     }
 ?>

@@ -19,6 +19,6 @@
 
     echo '<script>
             alert("'.$name.' added to cart. Thanks!");
-            window.location.href="../pages/user.php";
+            window.location.href="../pages/front/user.php";
             </script>';
-    ?>
+?>

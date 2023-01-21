@@ -38,9 +38,9 @@
             <div class="container p-3" id="cartTable">
                 <h1>CART</h1>
                 <?php
-                    require_once("../functions/printCart.php");
+                    require_once("../../functions/printCart.php");
                     showCart();
-                    require_once("../functions/cartActions.php");
+                    require_once("../../functions/cartActions.php");
                     if(isset($_POST['pay'])){
                         payCart();
                     }

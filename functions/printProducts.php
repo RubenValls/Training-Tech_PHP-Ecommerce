@@ -14,7 +14,7 @@
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 print '<div class="card p-2 mx-auto text-center" style="width: 18rem;">';
-                print '<form method="post" action="../functions/addCart.php">';
+                print '<form method="post" action="../../functions/addCart.php">';
                 print '<img src="'.$row["IMG"].'" class="card-img-top" alt="'.$row["NAME"].'">';
                 print '<div class="card-body">';
                 print '<h5 class="card-title">'.$row["NAME"].'</h5>';

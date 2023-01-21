@@ -18,7 +18,7 @@
     <nav class="navbar bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-            <img src="../assets/img/LOGO.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <img src="../../assets/img/LOGO.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
             Training-Tech
             </a>
             <a class="text-center" href="cart.php">
@@ -37,7 +37,7 @@
     <div class="container-fluid bg-dark">
             <div class="container p-3" id="productsGallery">
                 <?php
-                    require_once("../functions/printProducts.php");
+                    require_once("../../functions/printProducts.php");
                     showProducts();
                 ?>
             </div>
