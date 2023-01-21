@@ -83,8 +83,10 @@
                 $_SESSION['email'] = $email;
                 $_SESSION['success'] = "You are now logged in";
                 header('location: user.php');
+                $db->close();
             }else {
                 array_push($errors, "Wrong username/password combination");
+                $db->close();
                 echo '<script>
                 alert("Wrong username/password combination.");
                 window.location.href="login.html";
@@ -93,6 +95,4 @@
         }
         unset($errors);
     }
-
-    $db->close();
 ?>

@@ -2,6 +2,9 @@
     if(isset($_SESSION['email'])){
         session_destroy();
     }
+    if(isset($_SESSION['admin'])){
+        session_destroy();
+    }
 ?>
 <html lang="en">
 <head>
@@ -80,7 +83,8 @@
     </div>
     <footer id="sticky-footer" class="flex-shrink-0 py-4">
     <div class="container text-center">
-        <small>Copyright &copy; Training-Tech</small>
+        <small>Copyright &copy; Training-Tech - </small>
+        <a href="pages/adminForm.html" class="link-dark"><button class="btn btn-sm btn-outline-secondary">Admin Panel</button></a>
     </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
