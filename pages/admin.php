@@ -29,7 +29,19 @@
     </nav>
     <div class="container-fluid bg-dark text-white">
             <div class="container p-3" id="cartTable">
-                <h1>ADMIN PANEL</h1>
+                <div class="row m-2 h-25">
+                    <div class="col-6">
+                        <a href="pages/adminForm.html" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Add Product</h3></button></a>
+                    </div>
+                    <div class="col-6">
+                        <a href="pages/adminForm.html" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Delete Product</h3></button></a>
+                    </div>
+                </div>
+                <div class="row m-2 h-25">
+                    <div class="col">
+                    <a href="pages/adminForm.html" class="link-dark"><button class="btn btn-lg btn-secondary w-100 h-100"><h3>Add Admin</h3></button></a>
+                    </div>
+                </div>
             </div>
     </div>
     <footer id="sticky-footer" class="flex-shrink-0 py-4">
