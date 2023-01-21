@@ -35,7 +35,7 @@
         </div>
     </nav>
     <div class="container-fluid bg-dark text-white">
-            <div class="container p-3" id="cartTable">
+            <div class="container p-3 text-center" id="cartTable">
                 <h1>CART</h1>
                 <?php
                     require_once("../../functions/printCart.php");
@@ -49,6 +49,12 @@
                     }
                 ?>
             </div>
+    </div>
+    <div class="container-fluid bg-dark text-white p-1 text-center">
+        <h1>Purchase history:</h1>
+        <?php
+            
+        ?>
     </div>
     <footer id="sticky-footer" class="flex-shrink-0 py-4">
     <div class="container text-center">
