@@ -89,7 +89,42 @@
     </div>
     <div class="container-fluid bg-warning">
         <div class="container pt-5 pb-5">
-            <h1>Other</h1>
+            <div class="container bg-dark rounded p-2 text-white">
+                    <h1 class="text-center">Be a part of the community</h1>
+            </div>
+            <br>
+            <div class="row mb-2 text-center">
+                <div class="col-lg-6 p-2">
+                    <a href="pages/front/login.html" class="link-dark"><button type="button" class="btn btn-lg btn-outline-dark w-50 h-50 m-1">Log In</button></a>
+                    <a href="pages/front/signup.html" class="link-dark"><button type="button" class="btn btn-lg btn-outline-dark w-50 h-50 m-1">New Member?</button></a>
+                </div>
+                <div class="col-lg-6 p-2 text-justify mx-auto my-auto">
+                    <h5 class="p-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container pt-5 pb-5">
+            <div class="container bg-dark rounded p-2 text-white">
+                    <h1 class="text-center">Our roadmap</h1>
+            </div>
+            <br>
+            <div class="row mb-2 text-center">
+                <div class="col p-2">
+                    <img src="assets/img/roadmap.png" alt="award" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-warning">
+        <div class="container pt-5 pb-5">
+            <div class="container bg-dark rounded p-2 text-white">
+                    <h1 class="text-center">Where are we?</h1>
+            </div>
+            <div class="container pt-5 pb-5 text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d155436.08125551383!2d-1.9824853784165444!3d52.50287316470335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c9fd1c77f107ca4!2sTechTalent!5e0!3m2!1ses!2ses!4v1674347840005!5m2!1ses!2ses" class="w-100 h-50" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+            </div>
         </div>
     </div>
     <footer id="sticky-footer" class="flex-shrink-0 py-4">
