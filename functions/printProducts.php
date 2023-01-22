@@ -27,7 +27,7 @@
                 print '<input type="hidden" class="form-control" name="price" value="'.$row["PRICE"].'"/>';
                 print '<input type="hidden" class="form-control" name="user" value="'.$_SESSION['email'].'"/>';
                 print '<h6 class="mt-1">'.$row["QUANTITY"].' left!</h6>';
-                print '<button type="sumbit" href="#" class="btn btn-outline-primary mx-auto">Add to cart</button>';
+                print '<button type="sumbit" href="#" class="btn btn-outline-success mx-auto">Add to cart</button>';
                 print '</div>';
                 print '</form>';
                 print '</div>';

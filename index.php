@@ -73,7 +73,18 @@
     </div>
     <div class="container-fluid">
         <div class="container pt-5 pb-5">
-            <h1>Hi</h1>
+            <div class="container bg-dark rounded p-2 text-white">
+                    <h1 class="text-center">Why Training-Tech?</h1>
+            </div>
+            <br>
+            <div class="row mb-2 text-center">
+                <div class="col-lg-6 p-2 text-justify mx-auto my-auto">
+                    <h5 class="p-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</h5>
+                </div>
+                <div class="col-lg-6 p-2">
+                    <img src="assets/img/bestAward.jpg" alt="award" class="img-fluid">
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-fluid bg-warning">
